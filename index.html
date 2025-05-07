@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GDP Projekt – Európai Országok</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f1ee;
+      color: #3a2e2e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fffaf5;
+      border-bottom: 2px solid #d0c4b3;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #5a3b2e;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(90, 60, 40, 0.1);
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: #5a3b2e;
+      margin-top: 1.5rem;
+    }
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+    }
+    footer {
+      background-color: #f7f5f2;
+      border-top: 1px solid #d0c4b3;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GDP Projekt – Európai Országok Gazdasága</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Projektleírás</h2>
+      <p>Ez az adatvizualizációs projekt az európai országok gazdasági teljesítményét vizsgálja 1990 és 2023 között a bruttó hazai termék (GDP) alakulása alapján. A cél, hogy a felhasználó számára érthető, vizuális módon mutassa be, hogyan fejlődött az adott ország gazdasága az elmúlt évtizedek során.</p>
+      <p>A feldolgozott adatok hivatalos forrásból származnak (EUROSTAT) és az európai országok éves GDP-jét tartalmazzák 1990-től 2023-ig, USD-ben. Az adatok alkalmasak időbeli trendek és országok közötti különbségek vizsgálatára is.</p>
+      <p>Ez az időszak különösen változatos gazdasági eseményeket foglal magában: keleti blokk összeomlása, euró bevezetése, 2008-as válság, COVID-19. A GDP alakulása jól tükrözi e változások hatását az egyes országokra.</p>
+      <p>A cél felhasználók diákok, oktatók, adatelemzők, közgazdászok, illetve minden érdeklődő, aki szeretné megérteni az európai gazdaság dinamikáját adatalapú módon.</p>
+    </section>
+
+    <section>
+      <h2>Statisztikai Vizualizációk</h2>
+      <img src="plots/GDP eloszlása évek szerint (Boxplot).png" alt="Boxplot - évek szerint">
+      <img src="plots/GDP eloszlása évek szerint (Violin plot).png" alt="Violin plot - évek szerint">
+      <img src="plots/GDP eloszlása minden országra (2023).png" alt="GDP 2023 hisztogram">
+      <img src="plots/GDP eloszlása országonként (Boxplot).png" alt="Boxplot országonként">
+      <img src="plots/GDP hőtérkép.png" alt="GDP hőtérkép">
+      <img src="plots/GDP megoszlása TOP 10 (2020).png" alt="GDP TOP 10 pie chart">
+      <img src="plots/Országok GDP növekedése (2000-2023).png" alt="Növekedés 2000-2023">
+      <img src="plots/Összes ország adatai.png" alt="GDP országonként (2020)">
+      <img src="plots/Összes ország GDP trendje.png" alt="GDP trend összes ország">
+      <img src="plots/Top 10 ország átlagos GDP alapján.png" alt="Top 10 ország - átlagos GDP">
+    </section>
+
+    <section>
+      <h2>3D Interaktív Ábra</h2>
+      <div style="border: 1px solid #ccc; border-radius: 8px; overflow: hidden; margin-top: 1rem;">
+        <iframe src="gdp_3d_interaktiv.html" width="100%" height="600" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Készítette: Zsanet Somogyi – 2025
+  </footer>
+</body>
+</html>
